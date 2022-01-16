@@ -11,6 +11,7 @@ UPLOAD_KEY = './media/public-keys/'
 ALLOWED_EXTENSIONS = set(['txt'])
 
 app = Flask(__name__)
+app.debug = True
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 def allowed_file(filename):
